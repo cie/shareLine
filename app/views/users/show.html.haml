@@ -1,0 +1,19 @@
+- if notice
+  %p#notice= notice
+
+%p
+  %b Login:
+  = @user.login
+%p
+  %b Name:
+  = @user.name
+%p
+  %b Email:
+  = @user.email
+%p
+  %b Passwd:
+  = (@user.passwd || '').gsub(/./, '*')[0,6]
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path
