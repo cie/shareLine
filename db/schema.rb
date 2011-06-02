@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110601103203) do
+ActiveRecord::Schema.define(:version => 20110601101023) do
 
 # Could not dump table "users" because of following StandardError
 #   Unknown type 'password' for column 'passwd'
